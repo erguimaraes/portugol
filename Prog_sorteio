@@ -1,0 +1,38 @@
+programa
+{
+	inclua biblioteca Util --> util
+	
+	funcao inicio()
+	{
+    cadeia:nome
+		inteiro num_digitado, num_sorteado
+
+    escreva("nome do jogador: ")
+    leia(nome)
+		escreva("Informe um número de 0 a 100: ")
+		leia(num_digitado)
+
+		num_sorteado = util.sorteia(0, 100)
+
+		se (num_digitado >= 0 e num_digitado <= 100)
+		{
+			se (num_digitado == num_sorteado) 
+			{
+				escreva("Os números são iguais!")
+        escreva("nome você ganhou")
+			}
+			senao
+			{
+				escreva("Os números são diferentes!")
+        escreva("que pena. você não ganhou.")
+			}
+      escreva("\n\nome do jogador: ", nome)
+			escreva("\n\nNúmero digitado: ", num_digitado)
+			escreva("\nNúmero sorteado: ",  num_sorteado, "\n")
+		}
+		senao 
+		{
+			escreva("O número digitado deve estar entre 0 e 100\n")
+		}
+	}
+}

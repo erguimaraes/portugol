@@ -1,0 +1,42 @@
+programa
+{
+	funcao inicio()
+	{
+    cadeia pergunta
+		inteiro opcao
+		
+    escreva("De quem é a famosa frase “Penso, logo existo”? \n")
+    escreva("Qual a alternativa correta \n")
+		escreva("1) Platão \n")
+		escreva("2) G alileu Galilei \n")
+		escreva("3) Descartes \n\n")
+    escreva("4) Sócrates \n")
+
+		escreva("Escolha uma opção: ")
+		leia(opcao)
+
+		limpa()
+
+		escolha (opcao)	
+		{
+			  
+		 	
+        caso 1: 
+        pare
+		 		escreva ("errado")
+        caso 2: 
+        escreva ("errado")
+        pare
+		    caso 3: 
+        escreva ("certo")
+        pare
+		 		caso 4:
+        escreva ("errado")
+		 		pare
+		 	caso contrario: 
+		 		escreva ("Opção Inválida !")
+		}
+
+		escreva("\n")
+	}
+}
